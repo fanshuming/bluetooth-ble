@@ -1,0 +1,396 @@
+lib/hci.lo: lib/hci.c \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdc-predef.h \
+ config.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdio.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/libc-header-start.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/features.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/cdefs.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/wordsize.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/wordsize-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/long-double.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/long-double-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/gnu/stubs.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/gnu/stubs-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/gnu/stubs-hard.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include/stddef.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/typesizes.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/typesizes-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/libio.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/_G_config.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/wchar.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include/stdarg.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdio_lim.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sys_errlist.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdio.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/errno.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/errno.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/errno.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/errno.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/errno.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/errno-base.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/fcntl.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/fcntl.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/fcntl-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/fcntl-linux.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/uio.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/types.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/clock_t.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/clockid_t.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/time_t.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/timer_t.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/endian.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/endian.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/endian-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/byteswap.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/byteswap-16.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/uintn-identity.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/select.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/select.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigset.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/struct_timeval.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/struct_timespec.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/sysmacros.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sysmacros.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/pthreadtypes.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/pthreadtypes-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/falloc.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stat.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stat-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/unistd.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/posix_opt.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/environments.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/confname.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/getopt.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdlib.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/waitflags.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/waitstatus.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/xlocale.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/alloca.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdlib-bsearch.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdlib-float.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/string.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/string.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/string2.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/poll.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/poll.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/poll.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/param.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include-fixed/limits.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include-fixed/syslimits.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/limits.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/posix1_lim.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/local_lim.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/local_lim-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/limits.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/posix2_lim.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/xopen_lim.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/signal.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/signum.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/siginfo.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigaction.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigcontext.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/sigcontext.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/sigcontext-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigstack.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigstack-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ucontext.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ucontext-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigthread.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/param.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/param.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/param.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/param-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/param.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/uio.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ioctl.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/ioctls.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/ioctls.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/ioctls-32.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/ioctls.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/ioctl.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/ioctl.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/ioctl.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/ioctl-types.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ttydefaults.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/socket.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/socket.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/socket_type.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sockaddr.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/socket.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/socket.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/sockios.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/sockios.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/struct_osockaddr.h \
+ lib/bluetooth.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include/stdint.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdint.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/wchar.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/byteswap.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/netinet/in.h \
+ /home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/in.h \
+ lib/hci.h lib/hci_lib.h
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdc-predef.h:
+
+config.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdio.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/libc-header-start.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/features.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/cdefs.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/wordsize.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/wordsize-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/long-double.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/long-double-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/gnu/stubs.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/gnu/stubs-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/gnu/stubs-hard.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include/stddef.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/typesizes.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/typesizes-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/libio.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/_G_config.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/wchar.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include/stdarg.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdio_lim.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sys_errlist.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdio.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/errno.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/errno.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/errno.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/errno.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/errno.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/errno-base.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/fcntl.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/fcntl.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/fcntl-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/fcntl-linux.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/uio.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/types.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/clock_t.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/clockid_t.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/time_t.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/timer_t.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/endian.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/endian.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/endian-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/byteswap.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/byteswap-16.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/uintn-identity.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/select.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/select.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigset.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/struct_timeval.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/struct_timespec.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/sysmacros.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sysmacros.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/pthreadtypes.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/pthreadtypes-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/falloc.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stat.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stat-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/unistd.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/posix_opt.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/environments.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/confname.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/getopt.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdlib.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/waitflags.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/waitstatus.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/xlocale.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/alloca.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdlib-bsearch.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/stdlib-float.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/string.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/string.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/string2.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/poll.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/poll.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/poll.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/param.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include-fixed/limits.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include-fixed/syslimits.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/limits.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/posix1_lim.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/local_lim.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/local_lim-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/limits.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/posix2_lim.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/xopen_lim.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/signal.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/signum.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/siginfo.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigaction.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigcontext.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/sigcontext.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/sigcontext-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigstack.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigstack-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ucontext.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ucontext-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sigthread.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/param.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/param.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/param.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/param-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/param.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/uio.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ioctl.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/ioctls.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/ioctls.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/ioctls-32.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/ioctls.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/linux/ioctl.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/ioctl.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/ioctl.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/ioctl-types.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/ttydefaults.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/sys/socket.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/socket.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/socket_type.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/sockaddr.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/socket.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/socket.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm/sockios.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/asm-generic/sockios.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/types/struct_osockaddr.h:
+
+lib/bluetooth.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/x86_64-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/7.2.1/include/stdint.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/stdint.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/wchar.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/byteswap.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/netinet/in.h:
+
+/home/fan/ti-processor-sdk-linux-rt-am335x-evm-05.00.00.15/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/bits/in.h:
+
+lib/hci.h:
+
+lib/hci_lib.h:
