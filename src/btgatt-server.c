@@ -43,6 +43,9 @@
 #include "src/shared/gatt-db.h"
 #include "src/shared/gatt-server.h"
 
+#include<time.h>
+
+
 #define UUID_GAP			0x1800
 #define UUID_GATT			0x1801
 #define UUID_HEART_RATE			0x180d
@@ -51,10 +54,10 @@
 #define UUID_HEART_RATE_CTRL		0x2a39
 
 
-#define UUID_NIIC_RATE			0x1888
-#define UUID_NIIC_RATE_MSRMT		0x2a3a
-#define UUID_NIIC_RATE_BODY		0x2a3b
-#define UUID_NIIC_RATE_CTRL		0x2a3c
+#define UUID_NECRO_INFO			0x180a
+#define UUID_NECRO_FM_V		0x2a3a
+#define UUID_NECRO_TIME		0x2a3b
+#define UUID_NECRO_CTRL		0x2a3c
 
 
 #define ATT_CID 4
@@ -104,6 +107,8 @@ struct server {
 
 	uint16_t niic_handle;
 	uint16_t niic_msrmt_handle;
+	uint16_t niic_next_handle;
+	uint16_t niic_test_handle;
 	uint16_t niic_energy_expended;
 	bool niic_visible;
 	bool niic_msrmt_enabled;
@@ -447,6 +452,10 @@ done:
 	gatt_db_attribute_write_result(attrib, id, ecode);
 }
 
+
+
+
+
 static void confirm_write(struct gatt_db_attribute *attr, int err,
 							void *user_data)
 {
@@ -456,6 +465,65 @@ static void confirm_write(struct gatt_db_attribute *attr, int err,
 	fprintf(stderr, "Error caching attribute %p - err: %d\n", attr, err);
 	exit(1);
 }
+
+
+int get_system_now_time(char * time_str)
+{
+    struct tm *t;
+    time_t tt;
+    time(&tt);
+    t = localtime(&tt);
+    //printf("%4d年%02d月%02d日 %02d:%02d:%02d\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec);
+    printf("%4d %02d %02d %02d:%02d:%02d\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec);
+    sprintf(time_str,"%4d %02d %02d %02d:%02d:%02d\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec);
+	
+    printf("%s:%d date:%s", __FUNCTION__,__LINE__, time_str);
+    return 0;
+}
+
+// add niic test service
+static void niic_control_point_read_cb(struct gatt_db_attribute *attrib,
+					unsigned int id, uint16_t offset,
+					//const uint8_t *value, size_t len,
+					uint8_t opcode, struct bt_att *att,
+					void *user_data)
+{
+	struct server *server = user_data;
+	uint8_t ecode = 0;
+	char test[50] = {"kkk\0"};
+	bt_uuid_t *uuid1;
+
+	char test1[10]={"11\0"};
+	int length = 0;
+
+	printf("read callback %s:%d\n",__FUNCTION__, __LINE__);
+
+
+	uuid1 = gatt_db_attribute_get_type(attrib);
+	printf("%s:%d  uuid:0x%x\n", __FUNCTION__, __LINE__, uuid1->value);
+
+	if(uuid1->value.u32 == 0x2a3b){
+		get_system_now_time(test);
+		printf("%s:%d write new value:%s to db\n", __FUNCTION__, __LINE__,test);
+		gatt_db_attribute_reset(attrib);
+		gatt_db_attribute_write(attrib, 0, (void *) &test, sizeof(test),
+							BT_ATT_OP_WRITE_REQ,
+							NULL, NULL,
+							NULL);
+							
+	}
+	
+
+	if (offset) {
+		ecode = BT_ATT_ERROR_INVALID_OFFSET;
+		goto done;
+	}
+
+
+done:
+	gatt_db_attribute_read_result(attrib, id, ecode, test, strlen(test));
+}
+
 
 static void populate_gap_service(struct server *server)
 {
@@ -590,22 +658,27 @@ static void populate_hr_service(struct server *server)
 static void populate_niic_service(struct server *server)
 {
 	bt_uuid_t uuid;
-	struct gatt_db_attribute *service, *niic_msrmt, *body;
+	bt_uuid_t * uuid1;
+	struct gatt_db_attribute *service, *niic_msrmt, *body, *control;
 	//uint8_t body_loc = 8;  /* "Chest" */
-	char  body_loc[250] = {"niic ble test\0"};  /* "Chest" */
+	//char  body_loc[250] = {"niic ble test\0"};  /* "Chest" */
+	char  body_loc[25] = {"niic ble test\0"};  /* "Chest" */
 
 	/* Add Heart Rate Service */
-	bt_uuid16_create(&uuid, UUID_NIIC_RATE);
+	bt_uuid16_create(&uuid, UUID_NECRO_INFO);
 	service = gatt_db_add_service(server->db, &uuid, true, 8);
 	server->niic_handle = gatt_db_attribute_get_handle(service);
 
+	printf("%s:%d server->niic_handle:0x%x\n", __FUNCTION__,__LINE__,server->niic_handle);
+
 	/* HR Measurement Characteristic */
-	bt_uuid16_create(&uuid, UUID_NIIC_RATE_MSRMT);
+	bt_uuid16_create(&uuid, UUID_NECRO_FM_V);
 	niic_msrmt = gatt_db_service_add_characteristic(service, &uuid,
 						BT_ATT_PERM_NONE,
 						BT_GATT_CHRC_PROP_NOTIFY,
 						NULL, NULL, NULL);
 	server->niic_msrmt_handle = gatt_db_attribute_get_handle(niic_msrmt);
+	printf("%s:%d server->niic_msrmt_handle:0x%x\n", __FUNCTION__,__LINE__,server->niic_msrmt_handle);
 
 	bt_uuid16_create(&uuid, GATT_CLIENT_CHARAC_CFG_UUID);
 	gatt_db_service_add_descriptor(service, &uuid,
@@ -617,23 +690,31 @@ static void populate_niic_service(struct server *server)
 	 * Body Sensor Location Characteristic. Make reads obtain the value from
 	 * the database.
 	 */
-	bt_uuid16_create(&uuid, UUID_NIIC_RATE_BODY);
+	bt_uuid16_create(&uuid, UUID_NECRO_TIME);
 	body = gatt_db_service_add_characteristic(service, &uuid,
 						BT_ATT_PERM_READ,
 						BT_GATT_CHRC_PROP_READ,
-						NULL, NULL, server);
+						niic_control_point_read_cb, NULL, server);
+						//NULL, NULL, server);
+						
 	gatt_db_attribute_write(body, 0, (void *) &body_loc, sizeof(body_loc),
 							BT_ATT_OP_WRITE_REQ,
 							NULL, confirm_write,
 							NULL);
+	uuid1 = gatt_db_attribute_get_type(body);
+	server->niic_test_handle = gatt_db_attribute_get_handle(body);
+	printf("%s:%d server->niic_test_handle:0x%x, uuid:0x%x\n", __FUNCTION__, __LINE__,server->niic_test_handle,uuid1->value);
 
 	/* HR Control Point Characteristic */
-	bt_uuid16_create(&uuid, UUID_NIIC_RATE_CTRL);
-	gatt_db_service_add_characteristic(service, &uuid,
+	bt_uuid16_create(&uuid, UUID_NECRO_CTRL);
+	control = gatt_db_service_add_characteristic(service, &uuid,
 						BT_ATT_PERM_WRITE|BT_ATT_PERM_READ,
 						BT_GATT_CHRC_PROP_WRITE|BT_GATT_CHRC_PROP_READ,
 						NULL, niic_control_point_write_cb,
+					//	niic_control_point_read_cb, niic_control_point_write_cb,
 						server);
+	server->niic_next_handle = gatt_db_attribute_get_handle(control);
+	printf("%s:%d server->niic_next_handle:0x%x\n", __FUNCTION__, __LINE__,server->niic_next_handle);
 
 	if (server->hr_visible)
 		gatt_db_service_set_active(service, true);
